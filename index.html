@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY Bclass – Study Material for Odisha Students</title>
+
+<style>
+:root{
+  --bg:#f4f6f8;
+  --white:#ffffff;
+  --primary:#1e3a8a;
+  --secondary:#e5e7eb;
+  --text:#111827;
+  --muted:#6b7280;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* HEADER */
+header{
+  background:var(--white);
+  border-bottom:2px solid var(--secondary);
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.topbar{
+  max-width:1200px;
+  margin:auto;
+  padding:14px 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+  color:var(--primary);
+}
+
+nav a{
+  margin-left:16px;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  color:var(--text);
+}
+
+nav a:hover{
+  color:var(--primary);
+}
+
+/* SLIDER */
+.slider{
+  background:#dbeafe;
+  padding:30px 16px;
+  text-align:center;
+}
+
+.slider h1{
+  color:var(--primary);
+  font-size:26px;
+}
+
+.slider p{
+  margin-top:8px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* MAIN */
+main{
+  max-width:1200px;
+  margin:24px auto;
+  padding:0 16px;
+}
+
+section{
+  margin-bottom:36px;
+}
+
+h2{
+  color:var(--primary);
+  margin-bottom:14px;
+}
+
+/* CARDS */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:14px;
+}
+
+.card{
+  background:#f9fafb;
+  border:1px solid var(--secondary);
+  padding:16px;
+  text-align:center;
+  font-size:14px;
+  font-weight:600;
+  cursor:pointer;
+  text-decoration:none;
+  color:var(--text);
+}
+
+.card:hover{
+  background:#eef2ff;
+}
+
+/* DOWNLOAD BADGE */
+.download{
+  font-size:13px;
+  color:var(--muted);
+  margin-top:6px;
+}
+
+/* FOOTER */
+footer{
+  background:var(--white);
+  border-top:2px solid var(--secondary);
+  text-align:center;
+  padding:14px;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:40px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  nav{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="logo">MY Bclass</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Classes</a>
+      <a href="#">Entrance Exam</a>
+      <a href="#">Downloads</a>
+      <a href="#">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="slider">
+  <h1>STUDY MATERIAL FOR ODISHA STUDENTS</h1>
+  <p>Class 1–10 | Odia Medium | Entrance Exam Preparation</p>
+</section>
+
+<main>
+
+  <!-- ENTRANCE EXAM -->
+  <section>
+    <h2>Entrance Exam</h2>
+    <div class="card-grid">
+      <div class="card">🎓 OAV Entrance Exam</div>
+      <div class="card">🎓 Navodaya Entrance Exam</div>
+      <div class="card">🎓 NMMS</div>
+      <div class="card">🎓 NRTS</div>
+      <div class="card">🎓 Other Entrance Exams</div>
+    </div>
+  </section>
+
+  <!-- CLASSES -->
+  <section>
+    <h2>Classes</h2>
+    <div class="card-grid">
+      <div class="card">Class 1</div>
+      <div class="card">Class 2</div>
+      <div class="card">Class 3</div>
+      <div class="card">Class 4</div>
+      <div class="card">Class 5</div>
+      <div class="card">Class 6</div>
+      <div class="card">Class 7</div>
+      <div class="card">Class 8</div>
+      <div class="card">Class 9</div>
+      <div class="card">Class 10</div>
+    </div>
+  </section>
+
+  <!-- DOWNLOADS -->
+  <section>
+    <h2>Download Study Material</h2>
+    <div class="card-grid">
+      <div class="card">
+        📘 Notes
+        <div class="download">PDF Download</div>
+      </div>
+      <div class="card">
+        📝 Question Papers
+        <div class="download">Previous Years</div>
+      </div>
+      <div class="card">
+        📄 Model Papers
+        <div class="download">Exam Practice</div>
+      </div>
+      <div class="card">
+        ❓ Practice Questions
+        <div class="download">Chapter-wise</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 MY Bclass | Odisha Study Portal
+</footer>
+
+</body>
+</html>
